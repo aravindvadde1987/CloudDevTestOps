@@ -1,4 +1,4 @@
-package io.aadeesh.controller;
+package io.aravind.controller;
 
 import java.util.List;
 
