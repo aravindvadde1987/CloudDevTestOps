@@ -1,32 +1,38 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Home page</title>
-<style>  
-h3{
-  font-family: Calibri; 
-  font-size: 25pt;         
-  font-style: normal; 
-  font-weight: bold; 
-  color:SlateBlue;
-  text-align: center; 
-  text-decoration: underline
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
 }
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
 
-</style>  
+.bg {
+  /* The image used */
+  background-image: url("https://www2.deloitte.com/content/dam/Deloitte/ch/Images/header_images/services/strategy-operations/deloitte-ch-devops-landscape-banner.jpg/_jcr_content/renditions/cq5dam.web.1400.350.desktop.jpeg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
 </head>
 <body>
-<h3>..Welcome..</h3>
-<a href="signup"><h4>Sign Up</h4></a><br>
-<a href="login"><h4>Login</h4></a>
 
+
+<div class="bg">
+<h1 style="color:white;">CloudDevTestOps - With Intelligent automation</h1>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+   <a href="login" style="color:#FFFFFF;"><h4>Login</h4></a>
+</div>
 </body>
 </html>
 
 
-
+</body>
+</html>
