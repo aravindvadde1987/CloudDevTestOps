@@ -30,7 +30,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 		
 		<table border="0" cellpadding="2" cellspacing="2">
 			<tr>
-				<td>UserName(E-mail)</td>
+				<td>UserName</td>
 				<td><input type="text" name="username"></td>
 			</tr>
 			<tr>
