@@ -42,9 +42,9 @@ body, html {
 
   <label for="cars" style="color:#FFFFFF;">Repository:</label>
   <select name="repositories" id="repositories">
-    <option value="Main">Main</option>
-    <option value="Dev">Dev</option>
-    <option value="QA">QA</option>
+    <option value="Main">master</option>
+    <option value="Dev">feature</option>
+    <option value="QA">develop</option>
   </select>
   <br><br>
   <label for="cars" style="color:#FFFFFF;">Service:</label>

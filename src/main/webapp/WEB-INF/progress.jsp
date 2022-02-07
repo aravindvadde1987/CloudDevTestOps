@@ -88,7 +88,7 @@ body, html {
 		<table border="0" cellpadding="2" cellspacing="2">
 			<tr>
 				<td>&nbsp;</td>
-				<td><input type="submit" value="Launch your application"></td>
+				<td><input type="submit" id= "launch" value="Launch your application" disabled></td>
 			</tr>
 		</table>
 	</form>
@@ -165,6 +165,7 @@ function move4() {
 	      }
 	    }
 	  }
+	  document.getElementById("launch").disabled = false;
 	}
 </script>
 
