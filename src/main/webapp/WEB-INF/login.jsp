@@ -35,11 +35,11 @@ body, html {
 		
 		<table border="0" cellpadding="2" cellspacing="2">
 			<tr>
-				<td>UserName</td>
+				<td style="color:white;">UserName</td>
 				<td><input type="text" name="username"></td>
 			</tr>
 			<tr>
-				<td>Password</td>
+				<td style="color:white;">Password</td>
 				<td><input type="password" name="password"></td>
 			</tr>
 			<tr>

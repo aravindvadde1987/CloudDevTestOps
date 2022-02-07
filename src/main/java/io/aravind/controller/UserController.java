@@ -112,4 +112,12 @@ public class UserController
 	
 	}
 	
+	@PostMapping("/launch")
+	public String launch(HttpSession session,ModelMap modelMap)
+	{
+		modelMap.put("application", "next page");
+		return "application";
+	
+	}
+	
 }

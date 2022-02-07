@@ -73,13 +73,25 @@ body, html {
   <br>
    <br> <br>
    
-<button onclick="move4()">Generate</button>
+<button onclick="move4()">Proceed</button>
   
 <h3 style="color:white;" >Generating your Cloud Service URL</h3>
 
 <div id="myProgress4">
   <div id="myBar4"></div>
 </div>
+ <br>
+   <br> <br>
+
+<form method="post" action="${pageContext.request.contextPath }/launch">
+		
+		<table border="0" cellpadding="2" cellspacing="2">
+			<tr>
+				<td>&nbsp;</td>
+				<td><input type="submit" value="Launch your application"></td>
+			</tr>
+		</table>
+	</form>
 
 <br><br><br> <br><br>
   	<a href="${pageContext.request.contextPath }/logout"  style="color:#FFFFFF;">Logout</a>
