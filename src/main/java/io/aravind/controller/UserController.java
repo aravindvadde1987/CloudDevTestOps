@@ -104,5 +104,12 @@ public class UserController
 		return "redirect:/login";
 	}
 	
+	@PostMapping("/progress")
+	public String next(HttpSession session,ModelMap modelMap)
+	{
+		modelMap.put("progress", "next page");
+		return "progress";
+	
+	}
 	
 }

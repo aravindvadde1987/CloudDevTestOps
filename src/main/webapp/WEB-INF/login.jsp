@@ -1,29 +1,34 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Login Page</title>
-
-<style>  
-h3{
-  font-family: Calibri; 
-  font-size: 25pt;         
-  font-style: normal; 
-  font-weight: bold; 
-  color:SlateBlue;
-  text-align: center; 
-  text-decoration: underline
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
 }
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
 
-</style> 
+.bg {
+  /* The image used */
+  background-image: url("https://www2.deloitte.com/content/dam/Deloitte/ch/Images/header_images/services/strategy-operations/deloitte-ch-devops-landscape-banner.jpg/_jcr_content/renditions/cq5dam.web.1400.350.desktop.jpeg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
 </head>
 <body>
 
-<h3>Login Page</h3>
+
+<div class="bg">
+<h1 style="color:white;">CloudDevTestOps - With Intelligent automation</h1>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+   <h3>Login Page</h3>
 
 	${error}
 	<form method="post" action="${pageContext.request.contextPath }/login">
@@ -43,6 +48,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
 			</tr>
 		</table>
 	</form>
+</div>
+</body>
+</html>
+
 
 </body>
 </html>
