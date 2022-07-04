@@ -74,19 +74,8 @@ public class UserController
 	
 	if(auser!=null)
 	{
-		String uname=auser.getUser_email();
-		String upass=auser.getUser_pass();
-	
-		if(username.equalsIgnoreCase(uname) && password.equalsIgnoreCase(upass)) 
-		{
 			session.setAttribute("username",username);
 			return "dummy";
-		}
-		else 
-		{
-			modelMap.put("error", "Invalid Account");
-			return "login";
-		}
 	}
 	else
 	{
@@ -118,6 +107,12 @@ public class UserController
 		modelMap.put("application", "next page");
 		return "application";
 	
+	}
+	
+	public static void main(String[] args) {
+		for (int i=0;i<2000;i++) {
+		System.out.println("wta");
+		}
 	}
 	
 }
