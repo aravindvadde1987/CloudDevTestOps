@@ -49,7 +49,13 @@ body, html {
   <br><br>
   <label for="cars" style="color:#FFFFFF;">Service:</label>
   <select name="services" id="services">
-    <option value="Company Employee Details">Company Employee Details</option>
+    <option value="PPS Service">PPS Service</option>
+  </select>
+  <select name="services1" id="services1">
+    <option value="Contract Service">Contract Service</option>
+  </select>
+  <select name="services2" id="services2">
+    <option value="Vendor Service">Vendor Service</option>
   </select>
    <br><br>
    <br><br>
