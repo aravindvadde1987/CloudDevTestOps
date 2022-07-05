@@ -59,8 +59,12 @@ body, html {
   </select>
    <br><br>
    <br><br>
+  <p>ETL Load Required:</p>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">Yes</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">No</label><br>
   
-<form method="post" action="${pageContext.request.contextPath }/progress">
 		
 		<table border="0" cellpadding="2" cellspacing="2">
 			<tr>
