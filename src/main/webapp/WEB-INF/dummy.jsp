@@ -59,11 +59,11 @@ body, html {
   </select>
    <br><br>
    <br><br>
-  <p>ETL Load Required:</p>
+  <p style="color:#FFFFFF;">ETL Load Required:</p>
   <input type="radio" id="html" name="fav_language" value="HTML">
-  <label for="html">Yes</label><br>
+  <label for="html" style="color:#FFFFFF;">Yes</label><br>
   <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="css">No</label><br>
+  <label for="css" style="color:#FFFFFF;">No</label><br>
   
 		
 		<table border="0" cellpadding="2" cellspacing="2">
