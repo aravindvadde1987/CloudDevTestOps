@@ -61,9 +61,9 @@ body, html {
    <br><br>
   <p style="color:#FFFFFF;">ETL Load Required:</p>
   <input type="radio" id="html" name="fav_language" value="HTML">
-  <label for="html" style="color:#FFFFFF;">Yes</label><br>
+  <label style="color:#FFFFFF;">Yes</label><br>
   <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="css" style="color:#FFFFFF;">No</label><br>
+  <label style="color:#FFFFFF;">No</label><br>
   
 		
 		<table border="0" cellpadding="2" cellspacing="2">
