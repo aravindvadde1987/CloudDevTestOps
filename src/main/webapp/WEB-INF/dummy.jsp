@@ -59,11 +59,7 @@ body, html {
   </select>
    <br><br>
    <br><br>
-  <p style="color:#FFFFFF;">ETL Load Required:</p>
-  <input type="radio" id="html" name="fav_language" value="HTML">
-  <label style="color:#FFFFFF;">Yes</label><br>
-  <input type="radio" id="css" name="fav_language" value="CSS">
-  <label style="color:#FFFFFF;">No</label><br>
+ <input type="checkbox" style="color:white;" id="vehicle1" name="vehicle1" value="ETL Load">
   
 		
 		<table border="0" cellpadding="2" cellspacing="2">
