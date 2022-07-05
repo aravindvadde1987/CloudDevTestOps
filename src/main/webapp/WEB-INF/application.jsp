@@ -21,43 +21,38 @@ tr:nth-child(even) {
 </head>
 <body>
 
-<h2>Company Employee Details</h2>
+<h2>Promotional Pricing Details</h2>
 
 <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>UPC</th>
+    <th>List Cost</th>
+    <th>Promo Cost</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td>0001453901111</td>
+    <td>1.99$</td>
+    <td>1.49%</td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+    <td>0001453901112</td>
+    <td>2.99$</td>
+    <td>2.39$</td>
   </tr>
   <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
+    <td>0001453901113</td>
+    <td>1.49$</td>
+    <td>0.99$</td>
   </tr>
   <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
+    <td>0001453901114</td>
+    <td>3.29$</td>
+    <td>1.29$</td>
   </tr>
   <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
+    <td>0001453901115</td>
+    <td>2.79$</td>
+    <td>1.99$</td>
   </tr>
 </table>
   <br><br> <br><br> <br><br> <br>
