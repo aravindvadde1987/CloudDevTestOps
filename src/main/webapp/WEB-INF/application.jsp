@@ -67,7 +67,11 @@ tr:nth-child(even) {
   </tr>
 </table>
   <br><br> <br><br> <br><br> <br>
-  	<a href="${pageContext.request.contextPath }/logout">Logout</a>
+  	<a href="${pageContext.request.contextPath }/purge">Proceed with purging of Instance</a>
+<br><br> <br>
+  	<a
+			href="${pageContext.request.contextPath }/logout"
+			style="color: #FFFFFF;">Logout</a>
 </body>
 </html>
 

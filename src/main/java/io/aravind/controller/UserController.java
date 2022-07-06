@@ -72,6 +72,13 @@ public class UserController {
 		session.invalidate();
 		return "redirect:/login";
 	}
+	
+	@PostMapping(value = "/purge")
+	public String logout_user(HttpSession session) {
+		session.removeAttribute("username");
+		session.invalidate();
+		return "redirect:/purge";
+	}
 
 	@PostMapping("/progress")
 	public String next(HttpSession session, ModelMap modelMap) {
