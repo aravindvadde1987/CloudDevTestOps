@@ -52,6 +52,7 @@ body, html {
 
   <label for="cars" style="color:#FFFFFF;">Repository:</label>
   <select name="repositories" id="repositories">
+  <option value="PPS Service">select GIT branch</option>
     <option value="Main">dev</option>
     <option value="Dev">release</option>
     <option value="QA">master</option>
@@ -86,8 +87,21 @@ body, html {
   <label style="color:#FFFFFF;">Yes</label><br>
   <input type="radio" id="css" name="fav_language" value="CSS">
   <label style="color:#FFFFFF;">No</label><br>
+
+<table border="0" cellpadding="1" cellspacing="1">
+			<tr>
+			<br><br>
+				<td>&nbsp;</td>
+				<td><input onclick="move1()" type="submit" value="Create Environment"></td>
+			</tr>
+		</table>
   
-	<form method="post" action="${pageContext.request.contextPath }/progress">	
+	<h3 style="color: white;">Progress Details</h3>
+		<div id="myProgress1">
+			<div id="myBar1"></div>
+		</div>
+		<br> <br>
+		<form method="post" action="${pageContext.request.contextPath }/progress">	
 		<table border="0" cellpadding="2" cellspacing="2">
 			<tr>
 			<br><br>
@@ -96,13 +110,6 @@ body, html {
 			</tr>
 		</table>
 	</form>
-	
-	<h3 style="color: white;">Generating your Kubernetes URL</h3>
-
-		<div id="myProgress1">
-			<div id="myBar1"></div>
-		</div>
-		<br> <br>
   
    <br><br> <br><br>
   	<a href="${pageContext.request.contextPath }/logout"  style="color:#FFFFFF;">Logout</a>
