@@ -24,7 +24,7 @@ body, html {
 </head>
 <body>
 <div class="bg">
-<h1 style="color:white;">CloudDevTestOps - With Intelligent automation</h1>
+<h1 style="color:white;">"Cloud-Dev-Test-Ops" with intelligent automation</h1>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
    <a href="login" style="color:#FFFFFF;"><h4>Login</h4></a>
 </div>
