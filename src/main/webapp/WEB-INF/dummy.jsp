@@ -47,27 +47,29 @@ body, html {
     <option value="QA">master</option>
   </select>
   <br><br>
-  <label for="cars" style="color:#FFFFFF;">Service-1: </label>
+  <label for="cars" style="color:#FFFFFF;">Service-1:  </label>
   <select name="services" id="services">
+   <option value="PPS Service">select service</option>
     <option value="PPS Service">PPS Service</option>
     <option value="Contract Service">Contract Service</option>
     <option value="Vendor Service">Vendor Service</option>
   </select>
   <br><br>
-  <label for="cars" style="color:#FFFFFF;">Service-2: </label>
+  <label for="cars" style="color:#FFFFFF;">Service-2:  </label>
   <select name="services1" id="services1">
+  <option value="PPS Service">select service</option>
       <option value="PPS Service">PPS Service</option>
     <option value="Contract Service">Contract Service</option>
     <option value="Vendor Service">Vendor Service</option>    
   </select>
   <br><br>
-  <label for="cars" style="color:#FFFFFF;">Service-3: </label>
+  <label for="cars" style="color:#FFFFFF;">Service-3:  </label>
   <select name="services2" id="services2">
+  <option value="PPS Service">select service</option>
         <option value="PPS Service">PPS Service</option>
     <option value="Contract Service">Contract Service</option>
     <option value="Vendor Service">Vendor Service</option>
   </select>
-   <br><br>
    <br><br>
   <p style="color:#FFFFFF;">ETL Load:</p>
   <input type="radio" id="html" name="fav_language" value="HTML">
@@ -78,6 +80,7 @@ body, html {
 	<form method="post" action="${pageContext.request.contextPath }/progress">	
 		<table border="0" cellpadding="2" cellspacing="2">
 			<tr>
+			<br><br>
 				<td>&nbsp;</td>
 				<td><input type="submit" value="Create Environment"></td>
 			</tr>
