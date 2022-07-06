@@ -47,29 +47,25 @@ body, html {
 			<option value="Main">dev</option>
 			<option value="Dev">release</option>
 			<option value="QA">master</option>
-		</select> <br>
-		<br> <label for="cars" style="color: #FFFFFF;">Service-1:
+		</select> <br> <br> <label for="cars" style="color: #FFFFFF;">Service-1:
 		</label> <select name="services" id="services">
 			<option value="PPS Service">select service</option>
 			<option value="PPS Service">PPS Service</option>
 			<option value="Contract Service">Contract Service</option>
 			<option value="Vendor Service">Vendor Service</option>
-		</select> <br>
-		<br> <label for="cars" style="color: #FFFFFF;">Service-2:
+		</select> <br> <br> <label for="cars" style="color: #FFFFFF;">Service-2:
 		</label> <select name="services1" id="services1">
 			<option value="PPS Service">select service</option>
 			<option value="PPS Service">PPS Service</option>
 			<option value="Contract Service">Contract Service</option>
 			<option value="Vendor Service">Vendor Service</option>
-		</select> <br>
-		<br> <label for="cars" style="color: #FFFFFF;">Service-3:
+		</select> <br> <br> <label for="cars" style="color: #FFFFFF;">Service-3:
 		</label> <select name="services2" id="services2">
 			<option value="PPS Service">select service</option>
 			<option value="PPS Service">PPS Service</option>
 			<option value="Contract Service">Contract Service</option>
 			<option value="Vendor Service">Vendor Service</option>
-		</select> <br>
-		<br>
+		</select> <br> <br>
 		<p style="color: #FFFFFF;">ETL Load:</p>
 		  <input type="radio" id="html" name="fav_language" value="HTML">
 		  <label style="color: #FFFFFF;">Yes</label><br>   <input
@@ -100,9 +96,8 @@ body, html {
 			</table>
 		</form>
 
-		<br>
-		<br> <br>
-		<br> <a href="${pageContext.request.contextPath }/logout"
+		<br> <br> <br> <br> <a
+			href="${pageContext.request.contextPath }/logout"
 			style="color: #FFFFFF;">Logout</a>
 		<script>
 			var i = 0;

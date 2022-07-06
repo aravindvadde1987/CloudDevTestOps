@@ -3,14 +3,9 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-#myProgress1 {
-	width: 100%;
-	background-color: #ddd;
-}
-
 #myBar1 {
 	width: 1%;
-	height: 30px;
+	height: 20px;
 	background-color: #04AA6D;
 }
 
@@ -34,20 +29,45 @@ body, html {
 </head>
 <body>
 	<div class="bg">
+		<%
+			response.setHeader("Cache-control", "no-cache, no-store, must-revalidate");
 
-		<h1 style="color: white;">Jenkins Pipeline / Docker Image
-			creation / Generation of Kubernetes URL</h1>
-		<br> <br> <br>
+		if (session.getAttribute("username") == null) {
+			response.sendRedirect("/login");
+		}
+		%>
+		Welcome, ${sessionScope.username } <br>
 
-		<button onclick="move1()">Proceed</button>
+		<h1 style="color: white;">Execution of test-suites</h1>
 
-		<h3 style="color: white;">Generating your Kubernetes URL</h3>
 
-		<div id="myProgress1">
-			<div id="myBar1"></div>
-		</div>
-		<br> <br> <br>
+		<label for="cars" style="color: #FFFFFF;">Configuration:</label> <select
+			name="repositories" id="repositories">
+			<option value="PPS Service">select configuration from Helm Chart</option>
+			<option value="Main">1.10</option>
+			<option value="Dev">1.11</option>
+			<option value="QA">1.12</option>
+		</select> <br> <br> 
+		<label for="cars" style="color: #FFFFFF;">Test-suite execution type</label> <select name="services" id="services">
+			<option value="PPS Service">select type</option>
+			<option value="PPS Service">Smoke</option>
+			<option value="Contract Service">Regression</option>
+		</select> <br> <br> 
+		
 
+		<table border="0" cellpadding="1" cellspacing="1">
+			<tr>
+				<br>
+				<br>
+				<td>&nbsp;</td>
+				<td><input onclick="move1()" type="submit"
+					value="start execution"></td>
+			</tr>
+		</table>
+
+		<h4 style="color: white;">Progress Details</h4>
+		<div id="myBar1"></div>
+		<br> <br>
 		<form method="post"
 			action="${pageContext.request.contextPath }/launch">
 
@@ -55,15 +75,14 @@ body, html {
 				<tr>
 					<td>&nbsp;</td>
 					<td><input type="submit" id="launch"
-						value="Launch your application" disabled></td>
+						value="Launch your application for sanity testing" disabled></td>
 				</tr>
 			</table>
 		</form>
 
-		<br> <br> <br> <br> <br> <a
+		<br> <br> <br> <br> <a
 			href="${pageContext.request.contextPath }/logout"
 			style="color: #FFFFFF;">Logout</a>
-
 		<script>
 			var i = 0;
 			function move1() {
@@ -85,5 +104,7 @@ body, html {
 				document.getElementById("launch").disabled = false;
 			}
 		</script>
+	</div>
 </body>
 </html>
+
