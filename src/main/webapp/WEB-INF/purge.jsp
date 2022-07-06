@@ -29,14 +29,6 @@ body, html {
 </head>
 <body>
 	<div class="bg">
-		<%
-			response.setHeader("Cache-control", "no-cache, no-store, must-revalidate");
-
-		if (session.getAttribute("username") == null) {
-			response.sendRedirect("/login");
-		}
-		%>
-		Welcome, ${sessionScope.username } <br>
 
 		<h1 style="color: white;">Purge Kubernetes Instance</h1>
 
