@@ -3,6 +3,16 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+#myProgress1 {
+	width: 100%;
+	background-color: #ddd;
+}
+
+#myBar1 {
+	width: 1%;
+	height: 30px;
+	background-color: #04AA6D;
+}
 body, html {
   height: 100%;
   margin: 0;
@@ -82,14 +92,40 @@ body, html {
 			<tr>
 			<br><br>
 				<td>&nbsp;</td>
-				<td><input type="submit" value="Create Environment"></td>
+				<td><input onclick="move1()" type="submit" value="Create Environment"></td>
 			</tr>
 		</table>
 	</form>
+	
+	<h3 style="color: white;">Generating your Kubernetes URL</h3>
+
+		<div id="myProgress1">
+			<div id="myBar1"></div>
+		</div>
+		<br> <br>
   
    <br><br> <br><br>
   	<a href="${pageContext.request.contextPath }/logout"  style="color:#FFFFFF;">Logout</a>
-  	
+  	<script>
+			var i = 0;
+			function move1() {
+				if (i == 0) {
+					i = 1;
+					var elem = document.getElementById("myBar1");
+					var width = 1;
+					var id = setInterval(frame, 40);
+					function frame() {
+						if (width >= 100) {
+							clearInterval(id);
+							i = 0;
+						} else {
+							width++;
+							elem.style.width = width + "%";
+						}
+					}
+				}
+			}
+		</script>
 </div>
 </body>
 </html>

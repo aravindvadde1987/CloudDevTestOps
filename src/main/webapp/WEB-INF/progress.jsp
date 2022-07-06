@@ -8,7 +8,7 @@
 	background-color: #ddd;
 }
 
-#myBar4 {
+#myBar1 {
 	width: 1%;
 	height: 30px;
 	background-color: #04AA6D;
