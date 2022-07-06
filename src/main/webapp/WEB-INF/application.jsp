@@ -63,10 +63,6 @@ tr:nth-child(even) {
 	<br>
 	<br>
 	<a href="${pageContext.request.contextPath }/purge">Purge Instance</a>
-
-	<br />
-	<br />
-	<a href="${pageContext.request.contextPath }/logout">Logout</a>
 </body>
 </html>
 

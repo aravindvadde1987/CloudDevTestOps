@@ -4,30 +4,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body, html {
-  height: 100%;
-  margin: 0;
+	height: 100%;
+	margin: 0;
 }
 
 .bg {
-  /* The image used */
-  background-image: url("https://www2.deloitte.com/content/dam/Deloitte/ch/Images/header_images/services/strategy-operations/deloitte-ch-devops-landscape-banner.jpg/_jcr_content/renditions/cq5dam.web.1400.350.desktop.jpeg");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	/* The image used */
+	background-image:
+		url("https://www2.deloitte.com/content/dam/Deloitte/ch/Images/header_images/services/strategy-operations/deloitte-ch-devops-landscape-banner.jpg/_jcr_content/renditions/cq5dam.web.1400.350.desktop.jpeg");
+	/* Full height */
+	height: 100%;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 </style>
 </head>
 <body>
-<div class="bg">
-<h1 style="color:white;">Instance is purged</h1>
-<br/><br/><br/><br/><br/><br/> <a
-			href="${pageContext.request.contextPath }/logout"
+	<div class="bg">
+		<h3 style="color: white;">Thank you</h3>
+		<br> <br> <br>
+		<h3 style="color: white;">Your Kubernetes Instance is purged</h3>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br /> <a href="${pageContext.request.contextPath }/logout"
 			style="color: #FFFFFF;">Logout</a>
-</div>
+	</div>
 </body>
 </html>
