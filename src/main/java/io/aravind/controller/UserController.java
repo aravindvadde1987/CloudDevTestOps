@@ -74,7 +74,7 @@ public class UserController {
 	}
 	
 	@PostMapping(value = "/purge")
-	public String logout_user(HttpSession session) {
+	public String purgeInstance(HttpSession session) {
 		session.removeAttribute("username");
 		session.invalidate();
 		return "redirect:/purge";
