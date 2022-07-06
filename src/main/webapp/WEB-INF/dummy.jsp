@@ -37,13 +37,13 @@ body, html {
 	Welcome, ${sessionScope.username }
 	<br>
 
-<h1 style="color:white;">Please choose you repository and service for instance creation and generate application url</h1>
+<h1 style="color:white;">Kubernetes Instance Creation</h1>
 
 
   <label for="cars" style="color:#FFFFFF;">Repository:</label>
   <select name="repositories" id="repositories">
-    <option value="Main">master</option>
-    <option value="Dev">feature</option>
+    <option value="Main">dev</option>
+    <option value="Dev">release</option>
     <option value="QA">develop</option>
   </select>
   <br><br>
