@@ -75,9 +75,8 @@ public class UserController {
 	
 	@GetMapping(value = "/purge")
 	public String purgeInstance(HttpSession session) {
-		session.removeAttribute("username");
-		session.invalidate();
-		return "redirect:/purge";
+		
+		return "purge";
 	}
 
 	@PostMapping("/progress")
