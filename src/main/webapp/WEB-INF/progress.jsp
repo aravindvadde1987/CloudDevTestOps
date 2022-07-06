@@ -3,7 +3,12 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-#myBar1 {
+#myProgress1 {
+	width: 100%;
+	background-color: #ddd;
+}
+
+#myBar4 {
 	width: 1%;
 	height: 30px;
 	background-color: #04AA6D;
@@ -38,7 +43,7 @@ body, html {
 
 		<h3 style="color: white;">Generating your Kubernetes URL</h3>
 
-		<div id="myProgress4">
+		<div id="myProgress1">
 			<div id="myBar1"></div>
 		</div>
 		<br> <br> <br>
@@ -55,10 +60,8 @@ body, html {
 			</table>
 		</form>
 
-		<br>
-		<br>
-		<br> <br>
-		<br> <a href="${pageContext.request.contextPath }/logout"
+		<br> <br> <br> <br> <br> <a
+			href="${pageContext.request.contextPath }/logout"
 			style="color: #FFFFFF;">Logout</a>
 
 		<script>
