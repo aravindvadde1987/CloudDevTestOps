@@ -56,7 +56,7 @@ tr:nth-child(even) {
   </tr>
 </table>
   <br><br> <br><br> <br><br> <br>
-  	<a href="${pageContext.request.contextPath }/logout">Logout</a>
+  	<a href="${pageContext.request.contextPath }/purge">Purge Instance</a>
 </body>
 </html>
 
