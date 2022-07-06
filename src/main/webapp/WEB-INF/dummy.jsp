@@ -3,11 +3,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-#myProgress1 {
-	width: 100%;
-	background-color: #ddd;
-}
-
 #myBar1 {
 	width: 1%;
 	height: 30px;
@@ -97,16 +92,14 @@ body, html {
 		</table>
   
 	<h3 style="color: white;">Progress Details</h3>
-		<div id="myProgress1">
 			<div id="myBar1"></div>
-		</div>
 		<br> <br>
 		<form method="post" action="${pageContext.request.contextPath }/progress">	
-		<table border="0" cellpadding="2" cellspacing="2">
+		<table border="0" cellpadding="1" cellspacing="1">
 			<tr>
 			<br><br>
 				<td>&nbsp;</td>
-				<td><input onclick="move1()" type="submit" value="Create Environment"></td>
+				<td><input id="launch" type="submit" value="Proceed for execution of test-suites"></td>
 			</tr>
 		</table>
 	</form>
@@ -131,6 +124,7 @@ body, html {
 						}
 					}
 				}
+				document.getElementById("launch").disabled = false;
 			}
 		</script>
 </div>
