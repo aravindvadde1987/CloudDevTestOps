@@ -38,22 +38,21 @@ body, html {
 		%>
 		Welcome, ${sessionScope.username } <br>
 
-		<h1 style="color: white;">Execution of test-suites</h1>
-
-
-		<label for="cars" style="color: #FFFFFF;">Configuration:</label> <select
-			name="repositories" id="repositories">
-			<option value="PPS Service">select configuration from Helm Chart</option>
+		<h1 style="color: white;">Execution of Test-Suites</h1>
+		<br> <br> <label for="cars" style="color: #FFFFFF;">Configuration:</label>
+		<select name="repositories" id="repositories">
+			<option value="PPS Service">select configuration from Helm
+				Chart</option>
 			<option value="Main">1.10</option>
 			<option value="Dev">1.11</option>
 			<option value="QA">1.12</option>
-		</select> <br> <br> 
-		<label for="cars" style="color: #FFFFFF;">Test-suite execution type</label> <select name="services" id="services">
+		</select> <br> <br> <label for="cars" style="color: #FFFFFF;">Test-suite
+			execution type</label> <select name="services" id="services">
 			<option value="PPS Service">select type</option>
 			<option value="PPS Service">Smoke</option>
 			<option value="Contract Service">Regression</option>
-		</select> <br> <br> 
-		
+		</select> <br> <br>
+
 
 		<table border="0" cellpadding="1" cellspacing="1">
 			<tr>

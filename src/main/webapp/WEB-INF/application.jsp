@@ -56,7 +56,17 @@ tr:nth-child(even) {
   </tr>
 </table>
   <br><br> <br><br> <br><br> <br>
-  	<a href="${pageContext.request.contextPath }/logout">Logout</a>
+  	<a onclick="myFunction()" href="${pageContext.request.contextPath }/logout">Logout</a>
+  	
+  	<div id="snackbar">Instance is purged</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
 </body>
 </html>
 
