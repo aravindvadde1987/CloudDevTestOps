@@ -47,7 +47,7 @@ body, html {
     <option value="QA">master</option>
   </select>
   <br><br>
-  <label for="cars" style="color:#FFFFFF;">Service-1:  </label>
+  <label for="cars" style="color:#FFFFFF;">Service-1:   </label>
   <select name="services" id="services">
    <option value="PPS Service">select service</option>
     <option value="PPS Service">PPS Service</option>
@@ -55,7 +55,7 @@ body, html {
     <option value="Vendor Service">Vendor Service</option>
   </select>
   <br><br>
-  <label for="cars" style="color:#FFFFFF;">Service-2:  </label>
+  <label for="cars" style="color:#FFFFFF;">Service-2:   </label>
   <select name="services1" id="services1">
   <option value="PPS Service">select service</option>
       <option value="PPS Service">PPS Service</option>
@@ -63,7 +63,7 @@ body, html {
     <option value="Vendor Service">Vendor Service</option>    
   </select>
   <br><br>
-  <label for="cars" style="color:#FFFFFF;">Service-3:  </label>
+  <label for="cars" style="color:#FFFFFF;">Service-3:   </label>
   <select name="services2" id="services2">
   <option value="PPS Service">select service</option>
         <option value="PPS Service">PPS Service</option>
@@ -87,7 +87,7 @@ body, html {
 		</table>
 	</form>
   
-   <br><br> <br><br> <br><br> <br><br> <br><br> <br>
+   <br><br> <br><br>
   	<a href="${pageContext.request.contextPath }/logout"  style="color:#FFFFFF;">Logout</a>
   	
 </div>
